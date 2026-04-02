@@ -92,25 +92,25 @@ If customer conversations are captured, structured, and fed back into decision-m
 - Chat UX and admin dashboard UX
 - Iterative debugging based on real conversation failures
 
-## Design Thinking Demonstrated
+## Product Development Process
 
-### Empathize
+### Customer Discovery
 
 - Captured user pain points in response quality, discoverability, and mobile usability
 
-### Define
+### Problem Framing
 
 - Reframed the project from “chatbot build” to “customer journey and insight engine”
 
-### Ideate
+### Solution Exploration
 
 - Compared pure model responses vs retrieval-grounded, policy-constrained architecture
 
-### Prototype
+### MVP Build
 
 - Delivered chat, starter onboarding prompts, suggestion chips, and admin analytics
 
-### Test and Iterate
+### Iteration and Improvements
 
 - Fixed intent drift in follow-ups
 - Refined support/location/pricing routing
