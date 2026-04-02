@@ -1,0 +1,86 @@
+# COMPANY DATA DOCUMENTATION: SAVANNAH TECH INNOVATIONS
+
+## SECTION 1: COMPANY PROFILE
+Company Name: Savannah Tech Innovations
+Founded: 2022
+Headquarters: 145 Enterprise Road, Highlands, Harare, Zimbabwe
+Support Email: support@savannahtech.co.zw
+Billing Email: billing@savannahtech.co.zw
+Phone Number: +263 242 700 111
+Operating Hours: Monday to Friday, 08:00 CAT to 17:00 CAT. System monitoring is 24/7.
+Mission Statement: To empower African businesses by providing scalable cloud infrastructure, cutting-edge agentic AI tools, and seamless communication APIs tailored for local markets.
+
+## SECTION 2: PRODUCT CATALOG
+### Product 1: SavannahCloud Hosting
+Description: Highly available cloud hosting infrastructure optimized for low latency across Southern Africa.
+- Basic Tier: $15/month. Includes 2 vCPUs, 4GB RAM, 50GB SSD storage, and 1TB bandwidth. Ideal for small websites and student projects.
+- Pro Tier: $45/month. Includes 4 vCPUs, 16GB RAM, 200GB NVMe storage, and unmetered bandwidth. Designed for growing web applications and e-commerce platforms.
+- Enterprise Tier: Custom pricing starting at $150/month. Dedicated bare-metal servers, custom load balancing, and 24/7 dedicated account manager.
+
+### Product 2: Agentic-Flow AI
+Description: A low-code platform for building, deploying, and managing agentic AI workflows that can automate customer service, data entry, and predictive analytics.
+- Developer License: $30/month per seat. Includes access to basic models, standard API rate limits (100 requests/minute), and community support.
+- Business License: $99/month per seat. Includes access to premium predictive models, high rate limits (1000 requests/minute), priority email support, and custom data connectors.
+
+### Product 3: Baso Enterprise API
+Description: A robust, end-to-end encrypted messaging API designed to be integrated into custom applications for seamless user-to-user and business-to-user communication.
+- Starter Pack: Free up to 10,000 messages per month.
+- Growth Pack: $50/month for up to 500,000 messages. Includes rich media support and read receipts.
+- Scale Pack: $200/month for unlimited messaging, custom webhooks, and advanced analytics dashboards.
+
+## SECTION 3: COMPANY POLICIES
+### Refund and Cancellation Policy
+We offer a 14-day money-back guarantee on all our monthly subscriptions, including SavannahCloud and Agentic-Flow AI. If you are not satisfied within the first 14 days of your initial purchase, you may request a full refund by emailing billing@savannahtech.co.zw. Refunds take 3-5 business days to process. Cancellations must be made at least 24 hours before the next billing cycle to avoid being charged for the upcoming month.
+
+### Data Privacy and Security Policy
+Savannah Tech Innovations is committed to data security. All customer data is encrypted at rest using AES-256 and in transit using TLS 1.3. We do not sell customer data to third parties. We are fully compliant with the Zimbabwe Cyber and Data Protection Act. Regular security audits are conducted quarterly by independent third-party cybersecurity firms.
+
+## SECTION 4: FREQUENTLY ASKED QUESTIONS (FAQS)
+
+### Billing and Accounts
+Q: What payment methods do you accept?
+A: We accept Visa, MasterCard, and local mobile money integrations including EcoCash and OneMoney. Bank transfers are accepted for Enterprise Tier clients upon request.
+
+Q: How do I upgrade my SavannahCloud hosting plan?
+A: To upgrade your plan, log into your user dashboard, navigate to "Infrastructure > Servers," select the server you wish to upgrade, and click "Change Plan." The prorated difference will be charged to your default payment method immediately, and the new resources will be provisioned within 5 minutes.
+
+Q: My credit card failed. How much time do I have before my services are suspended?
+A: If a payment fails, our system will retry the card after 3 days and again after 7 days. If payment is not received within 14 days of the original invoice date, your services will be temporarily suspended. Services are completely terminated and data is deleted after 30 days of non-payment.
+
+### Technical Support: SavannahCloud
+Q: Do you offer automated backups?
+A: Yes, automated weekly backups are included free of charge on all SavannahCloud Pro and Enterprise tiers. Basic tier users can purchase automated daily backups for an additional $5/month. You can also trigger a manual snapshot at any time from your dashboard.
+
+Q: Can I install my own custom operating system?
+A: Yes. While we provide standard images for Ubuntu, CentOS, Debian, and Windows Server 2022, you can upload your own custom ISO via the "Custom Images" tab in the hosting dashboard.
+
+Q: How do I reset my server's root password?
+A: If you have lost your root password, go to the server dashboard, select "Console," and click the "Password Reset" button. The server will safely reboot into a recovery environment, generate a new temporary password, and display it on your screen.
+
+### Technical Support: Agentic-Flow AI
+Q: What AI models does Agentic-Flow support?
+A: By default, Agentic-Flow connects to a fine-tuned, internally hosted LLM optimized for business logic. Business License users can also input their own API keys to route workflows through external models like Gemini, Claude, or GPT-4.
+
+Q: Why are my Agentic-Flow API requests failing with a 429 error?
+A: A 429 error indicates you have hit your rate limit. Developer licenses are capped at 100 requests per minute. If you require higher throughput, please upgrade to the Business License or contact support for a custom rate limit increase.
+
+### Technical Support: Baso Enterprise API
+Q: Does the Baso API support group chats?
+A: Yes, the Baso Enterprise API supports group chats with up to 1,024 participants per channel. Group chat features include role-based permissions (Admin, Moderator, Member) and system messages.
+
+Q: How do I authenticate my application with the Baso API?
+A: Authentication is handled via Bearer Tokens. You must generate an API key from the "Developer Settings" section of your dashboard and include it in the Authorization header of all your HTTP requests: `Authorization: Bearer YOUR_API_KEY`. Keep this key secure and never expose it in client-side code.
+
+## SECTION 5: TROUBLESHOOTING GUIDES
+### SSH Connection Refused
+If you are receiving a "Connection Refused" error when trying to SSH into your SavannahCloud server:
+1. Verify that your server is powered on in the dashboard.
+2. Check that port 22 (or your custom SSH port) is open in the SavannahCloud Firewall settings.
+3. Ensure you are using the correct private key if password authentication is disabled.
+4. If you recently modified firewall rules via UFW or iptables, you may have locked yourself out. Use the Web Console in the dashboard to log in and correct the firewall rules.
+
+### Webhook Deliveries Failing
+If your Baso API webhooks are not being delivered:
+1. Check the "Webhook Logs" in your developer dashboard for specific HTTP error codes returned by your server.
+2. Ensure your receiving endpoint is returning a 200 OK status code within 3 seconds of receiving the payload. If it takes longer, our system marks it as a timeout.
+3. Verify that your endpoint is publicly accessible and not blocked by a local firewall or Cloudflare challenge page.

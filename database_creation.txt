@@ -1,0 +1,8 @@
+# this is how the database was created on superbase
+create table zimnest_company_data (
+  id bigserial primary key,
+  content text,             -- This stores the actual text chunk (e.g., a specific FAQ)
+  metadata jsonb,           -- Useful for storing which section the chunk came from
+  embedding vector(768)     -- This stores the 768-number array from text-embedding-004
+);
+
