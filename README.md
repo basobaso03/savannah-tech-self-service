@@ -1,6 +1,8 @@
 # Savannah Tech Innovations Self Service
 
-AI customer self-service platform focused on business outcomes, marketing insight, and product decision support.
+> AI customer self-service platform focused on business outcomes, marketing insight, and product decision support.
+![Project Preview](./docs/savana-overview.png)
+🔗 **Live Demo**: [Savannah Tech Innovations Self Service](https://savannah-tech-self-service.vercel.app/) &nbsp;|&nbsp; ⭐ Star this repo if it helped you
 
 This concept is positioned like an early-stage product initiative, from strategy to working MVP:
 
